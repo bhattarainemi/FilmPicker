@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+body{
+    background: #0E0E0E;
+    color: #FFFFFF;
+    font-family: 'Inter';
+}
+a{
+    color: white;
+}
+
+#heading-container{
+    width: 550px;
+    height: 210px;
+    display: flex;
+    background: url('./assets/image\ 36.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+#search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -12px;
+    
+}
+
+#search-container img{
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    padding: 9px 13px;
+    
+}
+
+#search-container input[type="text"]{
+    width: 300px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border-right: 1px solid black;
+    padding: 9px 13px;
+}
+#search-container button{
+    width: 120px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 12px 20px 12px 20px;
+    border:1px;
+}
+
+.divToPopulate{
+   
+    margin: auto;
+    width: 550px;
+    height: 100vh;
+    padding-top: 50px;
+    
+}
+.contentDiv{
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 10px;
+ 
+}
+.contentDiv img{
+    width: 100px;
+    height: 150px;
+}
+.movieDetails{
+    display: flex;
+    position: absolute;
+    left: 175px;
+    top: 0px;
+    justify-content: space-between;
+    align-items: center;
+   
+    width: 350px
+}
+.movieDetails img{
+    width: 15px;
+    height:15px;
+
+}
+.movie-title{
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.rating{
+    font-size: 12px;
+    margin-left: 5px
+}
+
+.movieData{
+    display: flex;
+    position: absolute;
+    left:175px;
+    top:40px;
+    align-items: center;
+    gap: 8px;
+   
+    width: 350px;
+    justify-content: space-between
+}
+
+.totalTime,.genre, .watchlist{
+    font-size: 12px;
+}
+.watchlist{
+    display: flex;
+    cursor: pointer;
+}
+.plot{
+    font-size: 14px;
+    width: 350px;
+    position: absolute;
+    left: 175px;
+    top: 70px;
+    color: gray;
+    text-align: left;
+ 
+}
