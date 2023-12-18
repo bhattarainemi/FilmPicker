@@ -12,7 +12,7 @@ searchButton.addEventListener("click", initialSearch);
 
 function initialSearch() {
   const searchInput = document.getElementById("searchString").value;
-  fetch(`http://www.omdbapi.com/?apikey=1d0f05ca&s=${searchInput}`)
+  fetch(`https://www.omdbapi.com/?apikey=1d0f05ca&s=${searchInput}`)
     .then((res) => res.json())
     .then((data) => {
       if (data.Response === "False") {
@@ -42,7 +42,7 @@ function initialSearch() {
 
 function detailedSearch(IDs) {
   const promises = IDs.map(id =>
-    fetch(`http://www.omdbapi.com/?apikey=1d0f05ca&i=${id}`)
+    fetch(`https://www.omdbapi.com/?apikey=1d0f05ca&i=${id}`)
       .then(res => res.json())
   );
 
